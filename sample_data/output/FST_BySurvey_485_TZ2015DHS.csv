@@ -1,0 +1,2 @@
+SurveyName,SurveyId,DHS_CountryCode,SurveyYear,SurveyType,SurveyStatus,CountryName,SurveyYearLabel,young_child_wt.nationalcount,had_fever_wt.nationalcount,public_treat_wt.nationalcount,any_treat_wt.nationalcount,had_fever_wt.nationalprop,fever_public_treat_wt.nationalprop,fever_any_treat_wt.nationalprop
+TZ2015DHS,485,TZ,2015,DHS,Completed,Tanzania,2015-16,9520.49168999996,1706.05731,234.60961,1366.450601,0.1791984453693701,0.13751566763018061,0.80094062080481931
