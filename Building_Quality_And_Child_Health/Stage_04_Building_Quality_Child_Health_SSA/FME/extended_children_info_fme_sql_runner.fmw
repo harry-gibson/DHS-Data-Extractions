@@ -1,0 +1,2099 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME2018\fme.exe" \\map-fs1.ndph.ox.ac.uk\map_data\DHS_Automation\Processing\Building_Quality_And_Child_Health_LT_201811\Code\extended_children_info_fme_sql_runner.fmw
+#              --Children_Info_SQL "<backslash><backslash>map-fs1.ndph.ox.ac.uk<backslash>map_data<backslash>DHS_Automation<backslash>Processing<backslash>Building_Quality_And_Child_Health_LT_201811<backslash>Code<backslash>HH_Level_Children_Health_Generic_Query_2018.sql"
+#              --DestDataset_CSV "C:\Users\zool1301.NDPH\Documents\DHS\Processing\child_health_20190403"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="4587.55 1489.25"
+#!   DOC_TOP_LEFT="-548.256 -1436.12"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="18547"
+#!   FME_DOCUMENT_GUID="cd840ffb-b600-4d02-8bec-b9bb3d3cbb64"
+#!   FME_DOCUMENT_PRIORGUID="3dc875ba-b9b3-4fd9-b52d-83703a234ca6,22b0b787-6606-4c85-9a49-c05b9989f11a,e313332c-25a2-47c8-a3d6-0b7db675bc84,c0f2d586-dc17-4743-b0b3-a1879559bbf7,87dbfc12-2e1e-44a6-b0e2-b46a2eaede58,fc380dc4-674c-49be-9fde-8af91314b113,7a25cb5f-8d4d-461c-9ee0-a7c3f3c82c62,32b29ae0-a02b-46bf-ac79-a4e16a0c7820,bdc05bf0-b120-4778-9443-17f09d56675f,c5d5d4ca-abec-4bae-bde2-9d26c962d9c2,dcef6464-243d-42e4-bec0-8e740a021046,0dc02a98-631e-4d3f-a46b-34f5d95d3d20"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.0.2 (20180903 - Build 18547 - WIN64)"
+#!   LAST_SAVE_DATE="2019-04-04T15:29:56"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="27"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-771.883 240.627"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="XLSXR"
+#!   DATASET="\\map-fs1.ndph.ox.ac.uk\map_data\DHS_Automation\SupportingInfo\Standard country codes.xlsx"
+#!   KEYWORD="XLSXR_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_start_angle number(31,15) multi_reader_full_id number(11,0) fme_secondary_axis number(31,15) fme_rotation number(31,15) multi_reader_keyword char(50) fme_dataset char(50) fme_type char(50) fme_geometry fme_char(50) fme_text_size number(31,15) xlsx_row_id number(11,0) fme_fill_color char(50) fme_color char(50) fme_feature_type char(50) fme_sweep_angle number(31,15) fme_basename char(50) multi_reader_type char(50) fme_primary_axis number(31,15) multi_reader_id number(11,0)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table Settings&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="16492"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Excel file(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="CSV"
+#!   DATASET="$(DestDataset_CSV)"
+#!   KEYWORD="CSV_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="csv_append_mode INHERIT_FROM_WRITER csv_field_names INHERIT_FROM_WRITER"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_secondary_axis float csv_type char(50) fme_rotation float fme_start_angle float fme_color text fme_type text fme_basename text fme_text_string text fme_fill_color text fme_geometry fme_char(50) fme_dataset text fme_feature_type text fme_sweep_angle float fme_primary_axis float fme_text_size float"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP csv_layer_group csv_append_mode%csv_field_names File Settings&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE csv_append_mode INHERIT_FROM_WRITER%yes%no Append to File&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL CHOICE csv_field_names INHERIT_FROM_WRITER%yes%no Output Field Names&quot; INHERIT_FROM_WRITER "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS="&quot;*{}$"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   GENERATE_FME_BUILD_NUM="16492"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="csv file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="auto"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="auto"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CSV"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_map"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CSV"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Children_All_20190403"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="34"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3329.0078749787504 -437.96893716937188"
+#!   BOUNDING_RECT="3329.0078749787504 -437.96893716937188 710.28293792937893 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="CSV_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="surveyid" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="surveyyear" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="surveyyear_lbl" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="survey_release_date" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="surveytype" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hv000_ccode_phase" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="dhs_countrycode" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="countryname" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="v001_cluster_id" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="cluster_id_full" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="latitude" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="longitude" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hhid" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hv002_hh_num" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hv006_interview_mth" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hv007_interview_yr" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hv008_interview_cmc" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="child_hh_line_num" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="birth_order" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="child_sex" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="desc_child_sex" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="b8_child_age" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hv105_child_age" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hv008_child_age_cmc_calc_months" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="mother_caseid" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc61_mother_highest_ed_lvl" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc61_desc_mother_highest_ed_lvl" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc62_mother_highest_ed_yr" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc62_desc_mother_highest_ed_yr" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h1_has_health_card" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h1_desc_has_health_card" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h11_had_diarrhea_recently" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h11_desc_had_diarrhea_recently" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h22_had_fever_recently" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml22_desc_had_fever_recently" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h31_had_cough_recently" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml31_desc_had_cough_recently" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h31b_short_rapid_breaths" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml31b_desc_short_rapid_breaths" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h31c_problem_in_chest" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml31c_desc_problem_in_chest" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h34_had_vitamin_a" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h7_received_dpt3" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h56_received_pneumococcal" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h58_received_rv2" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="h9_received_measles" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="m15_place_of_delivery" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="m15_desc_place_of_delivery" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="m17_delivery_by_csection" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="m19_birthweight_kg_3dec" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="m39_times_ate_stuff_yesterday" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml12_desc_type_net_slept_last_night" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml12_type_net_slept_last_night" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml19_sleep_under_ever_treated_net" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml_20_sleep_under_llin" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml33_mal_smear_test_status" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml33_desc_mal_smear_test_status" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml32_result_mal_smear_test" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml32_desc_result_mal_smear_test" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml35_result_mal_rapid_test" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hml35_desc_result_mal_rapid_test" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc70_ht_age_stdev_who" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc71_wt_age_stdev_who" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc72_wt_ht_stdev_who" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc5_ht_age_stdev" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc8_wt_age_stdev" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc11_wt_ht_stdev" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc56_hb_adj_alt" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc57_anemia_level" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hc57_desc_anemia_level" ATTR_TYPE="auto" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_append_mode" PARM_VALUE="no"/>
+#!     <DEFLINE_PARM PARM_NAME="csv_field_names" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#!     <DEFLINE_PARM PARM_NAME="csv_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET 
+#!   NAME="XLSXR_1"
+#!   OVERRIDE="-XLSXR_1_DATASET"
+#!   DATASET="XLSXR_1/Standard country codes.xlsx"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET 
+#!   NAME="CSV_1"
+#!   OVERRIDE="-CSV_1_DATASET"
+#!   DATASET="CSV_1/child_health_20190403"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILEMUSTEXIST_OR_ATTR_ENCODED Children_Info_SQL All_Files(*)|* SQL file for the extraction:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_ENCODED)HH_Level_Children_Health_Generic_Query_2018.sql"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_CSV Destination CSV (Comma Separated Value) Folder:"
+#!   DEFAULT_VALUE="C:\Users\zool1301.NDPH\Documents\DHS\Processing\child_health_20190403"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="59"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;HV000 is a combination of country code and phase&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="11.125031250312503 -68.750687506875067"
+#!   TOP_LEFT="11.125031250312503 -68.750687506875067"
+#!   BOTTOM_RIGHT="761.12503125031253 -118.75068750687507"
+#!   BOUNDING_RECT="11.125031250312503 -68.750687506875067 750 50"
+#!   ORDER="500000000000003"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="42"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Get listing of all sub-saharan surveys from the database, the table used here just contains a dump of the survey listing from the DHS API&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-548.25606256062554 -867.62996877968794"
+#!   TOP_LEFT="-548.25606256062554 -867.62996877968794"
+#!   BOTTOM_RIGHT="-52.256062560625537 -866.62996877968794"
+#!   BOUNDING_RECT="-548.25606256062554 -867.62996877968794 496 -1"
+#!   ORDER="500000000000008"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.78431372549019607,0.19607843137254902"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="57"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="57"
+#!   NAME="Get listing of all sub-saharan surveys from the DHS API"
+#!   DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="11.125031250312503 -687.50687506875067"
+#!   ORDER="500000000000002.13"
+#!   BOTTOM_RIGHT="607.12503125031253 -1401.1249687496875"
+#!   BOUNDING_RECT="11.125031250312503 -687.50687506875067 596 713.61809368093691"
+#!   STICKY="true"
+#!   COLOUR="0.5607843137254902,0.85490196078431369,0"
+#!   CONTENTS="35 29 32 46 33 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="58"
+#!   NAME="Get Phase of all sub-saharan surveys in our DB"
+#!   DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="-38.874968749687497 53.125531255312552"
+#!   ORDER="500000000000002"
+#!   BOTTOM_RIGHT="1156.2615626156262 -1436.1249687496879"
+#!   BOUNDING_RECT="-38.874968749687497 53.125531255312552 1195.1365313653137 1489.2505000050005"
+#!   STICKY="true"
+#!   COLOUR="0.37254901960784315,0.66666666666666663,0.54117647058823526"
+#!   CONTENTS="35 53 40 29 55 59 51 32 54 23 46 36 57 33 30 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="60"
+#!   NAME="Load the appropriate SQL template for the survey phase"
+#!   DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="1191.0007500074998 53.125531255312552"
+#!   ORDER="500000000000004"
+#!   BOTTOM_RIGHT="1787.0007500074998 -1396.8889688896888"
+#!   BOUNDING_RECT="1191.0007500074998 53.125531255312552 596 1450.0145001450014"
+#!   STICKY="true"
+#!   COLOUR="0.1803921568627451,0.44313725490196076,0.77254901960784317"
+#!   CONTENTS="52 41 56 43 49 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="FeatureMerger"
+#!   VERSION="15"
+#!   POSITION="726.26156261562619 -258.75306254062542"
+#!   BOUNDING_RECT="726.26156261562619 -258.75306254062542 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="MERGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="NOT_MERGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="REFERENCED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="numReferences" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="UNREFERENCED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="DUPLICATE_SUPPLIER"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Supplier"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Requestor"/>
+#!     <XFORM_PARM PARM_NAME="CONNECT_Z_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="IGNORE_NULLS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;surveyid&lt;closeparen&gt; &lt;at&gt;Value&lt;openparen&gt;surveynum&lt;closeparen&gt; AUTO"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_COUNT_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_TYPE" PARM_VALUE="Attributes Only"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PROCESS_DUPS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="REJECT_NULL_MISSING_KEYS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SUPPLIERS_FIRST" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SUPPLIER_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="41"
+#!   TYPE="StringReplacer"
+#!   VERSION="4"
+#!   POSITION="1307.0007500074998 -867.62996877968794"
+#!   BOUNDING_RECT="1307.0007500074998 -867.62996877968794 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="phase" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_SQL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="&lt;opencurly&gt;SURVEYID&lt;closecurly&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;surveyid&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="_SQL"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="44"
+#!   TYPE="SQLExecutor"
+#!   VERSION="7"
+#!   POSITION="1861.0007500074998 -480.00293750937499"
+#!   BOUNDING_RECT="1861.0007500074998 -480.00293750937499 792.90099999999995 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="RESULT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="phase" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_SQL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="b8_child_age" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="birth_order" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="child_hh_line_num" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="child_sex" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cluster_id_full" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="desc_child_sex" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h1_desc_has_health_card" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h1_has_health_card" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h7_received_dpt3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h9_received_measles" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h11_desc_had_diarrhea_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h11_had_diarrhea_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h22_had_fever_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h31_had_cough_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h31b_short_rapid_breaths" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h31c_problem_in_chest" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h34_had_vitamin_a" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h56_received_pneumococcal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h58_received_rv2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc5_ht_age_stdev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc8_wt_age_stdev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc11_wt_ht_stdev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc56_hb_adj_alt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc57_anemia_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc57_desc_anemia_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc61_desc_mother_highest_ed_lvl" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc61_mother_highest_ed_lvl" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc62_desc_mother_highest_ed_yr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc62_mother_highest_ed_yr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc70_ht_age_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc71_wt_age_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc72_wt_ht_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hhid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml_20_sleep_under_llin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml12_desc_type_net_slept_last_night" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml12_type_net_slept_last_night" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml19_sleep_under_ever_treated_net" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml22_desc_had_fever_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml31_desc_had_cough_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml31b_desc_short_rapid_breaths" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml31c_desc_problem_in_chest" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml32_desc_result_mal_smear_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml32_result_mal_smear_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml33_desc_mal_smear_test_status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml33_mal_smear_test_status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml35_desc_result_mal_rapid_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml35_result_mal_rapid_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv000_ccode_phase" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv002_hh_num" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv006_interview_mth" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv007_interview_yr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv008_child_age_cmc_calc_months" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv008_interview_cmc" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv105_child_age" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m15_desc_place_of_delivery" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m15_place_of_delivery" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m17_delivery_by_csection" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m19_birthweight_kg_3dec" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m39_times_ate_stuff_yesterday" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="survey_release_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear_lbl" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="v001_cluster_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="woman_caseid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="phase" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_SQL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="phase" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_SQL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="b8_child_age" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="birth_order" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="child_hh_line_num" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="child_sex" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="cluster_id_full" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="desc_child_sex" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h1_desc_has_health_card" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h1_has_health_card" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h7_received_dpt3" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h9_received_measles" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h11_desc_had_diarrhea_recently" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h11_had_diarrhea_recently" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h22_had_fever_recently" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h31_had_cough_recently" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h31b_short_rapid_breaths" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h31c_problem_in_chest" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h34_had_vitamin_a" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h56_received_pneumococcal" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="h58_received_rv2" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc5_ht_age_stdev" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc8_wt_age_stdev" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc11_wt_ht_stdev" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc56_hb_adj_alt" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc57_anemia_level" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc57_desc_anemia_level" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc61_desc_mother_highest_ed_lvl" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc61_mother_highest_ed_lvl" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc62_desc_mother_highest_ed_yr" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc62_mother_highest_ed_yr" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc70_ht_age_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc71_wt_age_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hc72_wt_ht_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hhid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml_20_sleep_under_llin" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml12_desc_type_net_slept_last_night" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml12_type_net_slept_last_night" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml19_sleep_under_ever_treated_net" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml22_desc_had_fever_recently" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml31_desc_had_cough_recently" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml31b_desc_short_rapid_breaths" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml31c_desc_problem_in_chest" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml32_desc_result_mal_smear_test" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml32_result_mal_smear_test" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml33_desc_mal_smear_test_status" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml33_mal_smear_test_status" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml35_desc_result_mal_rapid_test" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hml35_result_mal_rapid_test" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hv000_ccode_phase" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hv002_hh_num" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hv006_interview_mth" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hv007_interview_yr" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hv008_child_age_cmc_calc_months" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hv008_interview_cmc" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hv105_child_age" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="m15_desc_place_of_delivery" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="m15_place_of_delivery" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="m17_delivery_by_csection" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="m19_birthweight_kg_3dec" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="m39_times_ate_stuff_yesterday" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="survey_release_date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear_lbl" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="v001_cluster_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="woman_caseid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Result Attributes if Conflict"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="DHS&lt;space&gt;Data&lt;space&gt;Readonly"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="b8_child_age,birth_order,child_hh_line_num,child_sex,cluster_id_full,countryname,desc_child_sex,dhs_countrycode,h1_desc_has_health_card,h1_has_health_card,h7_received_dpt3,h9_received_measles,h11_desc_had_diarrhea_recently,h11_had_diarrhea_recently,h22_had_fever_recently,h31_had_cough_recently,h31b_short_rapid_breaths,h31c_problem_in_chest,h34_had_vitamin_a,h56_received_pneumococcal,h58_received_rv2,hc5_ht_age_stdev,hc8_wt_age_stdev,hc11_wt_ht_stdev,hc56_hb_adj_alt,hc57_anemia_level,hc57_desc_anemia_level,hc61_desc_mother_highest_ed_lvl,hc61_mother_highest_ed_lvl,hc62_desc_mother_highest_ed_yr,hc62_mother_highest_ed_yr,hc70_ht_age_stdev_who,hc71_wt_age_stdev_who,hc72_wt_ht_stdev_who,hhid,hml_20_sleep_under_llin,hml12_desc_type_net_slept_last_night,hml12_type_net_slept_last_night,hml19_sleep_under_ever_treated_net,hml22_desc_had_fever_recently,hml31_desc_had_cough_recently,hml31b_desc_short_rapid_breaths,hml31c_desc_problem_in_chest,hml32_desc_result_mal_smear_test,hml32_result_mal_smear_test,hml33_desc_mal_smear_test_status,hml33_mal_smear_test_status,hml35_desc_result_mal_rapid_test,hml35_result_mal_rapid_test,hv000_ccode_phase,hv002_hh_num,hv006_interview_mth,hv007_interview_yr,hv008_child_age_cmc_calc_months,hv008_interview_cmc,hv105_child_age,latitude,longitude,m15_desc_place_of_delivery,m15_place_of_delivery,m17_delivery_by_csection,m19_birthweight_kg_3dec,m39_times_ate_stuff_yesterday,survey_release_date,surveynum,surveytype,surveyyear_lbl,v001_cluster_id,woman_caseid"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="DHS&lt;space&gt;Data&lt;space&gt;Readonly"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="dhs_data_tables"/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;_SQL&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="52"
+#!   TYPE="AttributeFileReader"
+#!   VERSION="3"
+#!   POSITION="1307.0007500074998 -660.00293750937499"
+#!   BOUNDING_RECT="1307.0007500074998 -660.00293750937499 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="phase" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_SQL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CHAR_ENCODING" PARM_VALUE="utf-8"/>
+#!     <XFORM_PARM PARM_NAME="DEST_ATTR" PARM_VALUE="_SQL"/>
+#!     <XFORM_PARM PARM_NAME="FILE_NAME" PARM_VALUE="$(Children_Info_SQL)"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFileReader_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="32"
+#!   TYPE="Tester"
+#!   VERSION="2"
+#!   POSITION="103.1250312503125 -1023.1349687496876"
+#!   BOUNDING_RECT="103.1250312503125 -1023.1349687496876 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="publicationdate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="regionname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="releasedate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveystatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyearlabel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="publicationdate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="regionname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="releasedate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveystatus" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyearlabel" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;regionname&lt;closeparen&gt; BEGINS_WITH Sub-Saharan"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="33"
+#!   TYPE="AttributeKeeper"
+#!   VERSION="3"
+#!   POSITION="103.12503125031253 -1238.25"
+#!   BOUNDING_RECT="103.12503125031253 -1238.25 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="countryname,surveytype,surveyyear,surveynum,dhs_countrycode"/>
+#!     <XFORM_PARM PARM_NAME="KEEP_LIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeKeeper_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="40"
+#!   TYPE="SQLCreator"
+#!   VERSION="3"
+#!   POSITION="103.12503125031253 -258.75306254062542"
+#!   BOUNDING_RECT="103.12503125031253 -258.75306254062542 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <OUTPUT_FEAT NAME="RESULT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="DHS&lt;space&gt;Data&lt;space&gt;Readonly"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="hv000,surveyid"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="DHS&lt;space&gt;Data&lt;space&gt;Readonly"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="dhs_data_locations dhs_data_tables"/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;distinct&lt;space&gt;surveyid&lt;comma&gt;hv000&lt;space&gt;from&lt;space&gt;dhs_data_tables.&lt;quote&gt;RECH0&lt;quote&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="30"
+#!   TYPE="StringSearcher"
+#!   VERSION="3"
+#!   POSITION="682.51112511125098 -814.50443752437536"
+#!   BOUNDING_RECT="682.51112511125098 -814.50443752437536 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <OUTPUT_FEAT NAME="MATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="phase" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="NOT_MATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="MATCHED_PARTS_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MATCHED_RESULT_ATTR" PARM_VALUE="phase"/>
+#!     <XFORM_PARM PARM_NAME="MATCHES_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="&lt;backslash&gt;d&lt;dollar&gt;"/>
+#!     <XFORM_PARM PARM_NAME="STRING_TO_SEARCH" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;hv000&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringSearcher"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="43"
+#!   TYPE="AttributeValueMapper"
+#!   VERSION="6"
+#!   POSITION="1307.0007500074998 -467.50281250812498"
+#!   BOUNDING_RECT="1307.0007500074998 -467.50281250812498 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="phase" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_SQL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="$(Children_Info_SQL)"/>
+#!     <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#!     <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="1,&lt;dollar&gt;&lt;openparen&gt;FME_MF_DIR&lt;closeparen&gt;Extended_Building_Quality_Generic_Query_Old_Surveys.sql"/>
+#!     <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="phase"/>
+#!     <XFORM_PARM PARM_NAME="VALUE_MAP_TABLE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_SQL"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="27"
+#!   TYPE="Inspector"
+#!   VERSION="3"
+#!   POSITION="1949.0126874268735 -1023.1349687496876"
+#!   BOUNDING_RECT="1949.0126874268735 -1023.1349687496876 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor_2__Rejected_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="53"
+#!   TYPE="Tester"
+#!   VERSION="2"
+#!   POSITION="103.12503125031253 -467.50281250812498"
+#!   BOUNDING_RECT="103.12503125031253 -467.50281250812498 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="hv000" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;surveyid&lt;closeparen&gt; = 253"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="61"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="1861.0007500074998 -833.00443752437536"
+#!   BOUNDING_RECT="1861.0007500074998 -833.00443752437536 -1 -1"
+#!   ORDER="500000000000005"
+#!   PARMS_EDITED="false"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer_3_Output"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="63"
+#!   TYPE="AttributeManager"
+#!   VERSION="2"
+#!   POSITION="2756.0265312553124 -437.96893716937188"
+#!   BOUNDING_RECT="2756.0265312553124 -437.96893716937188 -1 -1"
+#!   ORDER="500000000000006"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear_lbl" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="survey_release_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv000_ccode_phase" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="v001_cluster_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cluster_id_full" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hhid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv002_hh_num" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv006_interview_mth" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv007_interview_yr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv008_interview_cmc" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="child_hh_line_num" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="birth_order" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="child_sex" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="desc_child_sex" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="b8_child_age" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv105_child_age" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hv008_child_age_cmc_calc_months" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="mother_caseid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc61_mother_highest_ed_lvl" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc61_desc_mother_highest_ed_lvl" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc62_mother_highest_ed_yr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc62_desc_mother_highest_ed_yr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h1_has_health_card" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h1_desc_has_health_card" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h11_had_diarrhea_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h11_desc_had_diarrhea_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h22_had_fever_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml22_desc_had_fever_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h31_had_cough_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml31_desc_had_cough_recently" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h31b_short_rapid_breaths" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml31b_desc_short_rapid_breaths" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h31c_problem_in_chest" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml31c_desc_problem_in_chest" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h34_had_vitamin_a" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h7_received_dpt3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h56_received_pneumococcal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h58_received_rv2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="h9_received_measles" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m15_place_of_delivery" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m15_desc_place_of_delivery" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m17_delivery_by_csection" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m19_birthweight_kg_3dec" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="m39_times_ate_stuff_yesterday" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml12_desc_type_net_slept_last_night" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml12_type_net_slept_last_night" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml19_sleep_under_ever_treated_net" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml_20_sleep_under_llin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml33_mal_smear_test_status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml33_desc_mal_smear_test_status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml32_result_mal_smear_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml32_desc_result_mal_smear_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml35_result_mal_rapid_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hml35_desc_result_mal_rapid_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc70_ht_age_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc71_wt_age_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc72_wt_ht_stdev_who" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc5_ht_age_stdev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc8_wt_age_stdev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc11_wt_ht_stdev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc56_hb_adj_alt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc57_anemia_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hc57_desc_anemia_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_SQL _SQL  REMOVE surveyid surveyid  NO_OP surveyyear surveyyear  NO_OP surveyyear_lbl surveyyear_lbl  NO_OP survey_release_date survey_release_date  NO_OP surveytype surveytype  NO_OP hv000_ccode_phase hv000_ccode_phase  NO_OP dhs_countrycode dhs_countrycode  NO_OP countryname countryname  NO_OP v001_cluster_id v001_cluster_id  NO_OP cluster_id_full cluster_id_full  NO_OP latitude latitude  NO_OP longitude longitude  NO_OP hhid hhid  NO_OP hv000 hv000  REMOVE phase phase  REMOVE hv002_hh_num hv002_hh_num  NO_OP hv006_interview_mth hv006_interview_mth  NO_OP hv007_interview_yr hv007_interview_yr  NO_OP hv008_interview_cmc hv008_interview_cmc  NO_OP child_hh_line_num child_hh_line_num  NO_OP birth_order birth_order  NO_OP child_sex child_sex  NO_OP desc_child_sex desc_child_sex  NO_OP b8_child_age b8_child_age  NO_OP hv105_child_age hv105_child_age  NO_OP hv008_child_age_cmc_calc_months hv008_child_age_cmc_calc_months  NO_OP woman_caseid mother_caseid  RENAME_SET_VALUE hc61_mother_highest_ed_lvl hc61_mother_highest_ed_lvl  NO_OP hc61_desc_mother_highest_ed_lvl hc61_desc_mother_highest_ed_lvl  NO_OP hc62_mother_highest_ed_yr hc62_mother_highest_ed_yr  NO_OP hc62_desc_mother_highest_ed_yr hc62_desc_mother_highest_ed_yr  NO_OP h1_has_health_card h1_has_health_card  NO_OP h1_desc_has_health_card h1_desc_has_health_card  NO_OP h11_had_diarrhea_recently h11_had_diarrhea_recently  NO_OP h11_desc_had_diarrhea_recently h11_desc_had_diarrhea_recently  NO_OP h22_had_fever_recently h22_had_fever_recently  NO_OP hml22_desc_had_fever_recently hml22_desc_had_fever_recently  NO_OP h31_had_cough_recently h31_had_cough_recently  NO_OP hml31_desc_had_cough_recently hml31_desc_had_cough_recently  NO_OP h31b_short_rapid_breaths h31b_short_rapid_breaths  NO_OP hml31b_desc_short_rapid_breaths hml31b_desc_short_rapid_breaths  NO_OP h31c_problem_in_chest h31c_problem_in_chest  NO_OP hml31c_desc_problem_in_chest hml31c_desc_problem_in_chest  NO_OP h34_had_vitamin_a h34_had_vitamin_a  NO_OP h7_received_dpt3 h7_received_dpt3  NO_OP h56_received_pneumococcal h56_received_pneumococcal  NO_OP h58_received_rv2 h58_received_rv2  NO_OP h9_received_measles h9_received_measles  NO_OP m15_place_of_delivery m15_place_of_delivery  NO_OP m15_desc_place_of_delivery m15_desc_place_of_delivery  NO_OP m17_delivery_by_csection m17_delivery_by_csection  NO_OP m19_birthweight_kg_3dec m19_birthweight_kg_3dec  NO_OP m39_times_ate_stuff_yesterday m39_times_ate_stuff_yesterday  NO_OP hml12_desc_type_net_slept_last_night hml12_desc_type_net_slept_last_night  NO_OP hml12_type_net_slept_last_night hml12_type_net_slept_last_night  NO_OP hml19_sleep_under_ever_treated_net hml19_sleep_under_ever_treated_net  NO_OP hml_20_sleep_under_llin hml_20_sleep_under_llin  NO_OP hml33_mal_smear_test_status hml33_mal_smear_test_status  NO_OP hml33_desc_mal_smear_test_status hml33_desc_mal_smear_test_status  NO_OP hml32_result_mal_smear_test hml32_result_mal_smear_test  NO_OP hml32_desc_result_mal_smear_test hml32_desc_result_mal_smear_test  NO_OP hml35_result_mal_rapid_test hml35_result_mal_rapid_test  NO_OP hml35_desc_result_mal_rapid_test hml35_desc_result_mal_rapid_test  NO_OP hc70_ht_age_stdev_who hc70_ht_age_stdev_who  NO_OP hc71_wt_age_stdev_who hc71_wt_age_stdev_who  NO_OP hc72_wt_ht_stdev_who hc72_wt_ht_stdev_who  NO_OP hc5_ht_age_stdev hc5_ht_age_stdev  NO_OP hc8_wt_age_stdev hc8_wt_age_stdev  NO_OP hc11_wt_ht_stdev hc11_wt_ht_stdev  NO_OP hc56_hb_adj_alt hc56_hb_adj_alt  NO_OP hc57_anemia_level hc57_anemia_level  NO_OP hc57_desc_anemia_level hc57_desc_anemia_level  NO_OP surveynum surveynum  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="46"
+#!   TYPE="SQLCreator"
+#!   VERSION="3"
+#!   POSITION="103.1250312503125 -814.50443752437536"
+#!   BOUNDING_RECT="103.1250312503125 -814.50443752437536 -1 -1"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18547"
+#! >
+#!     <OUTPUT_FEAT NAME="RESULT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="publicationdate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="regionname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="releasedate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveystatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyearlabel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="countryname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dhs_countrycode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="publicationdate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="regionname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="releasedate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveynum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveystatus" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveytype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyear" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="surveyyearlabel" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="DHS&lt;space&gt;Data&lt;space&gt;Readonly"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="countryname,dhs_countrycode,publicationdate,regionname,releasedate,surveyid,surveynum,surveystatus,surveytype,surveyyear,surveyyearlabel"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="DHS&lt;space&gt;Data&lt;space&gt;Readonly"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="dhs_survey_specs"/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;*&lt;space&gt;from&lt;space&gt;&lt;quote&gt;dhs_survey_specs&lt;quote&gt;.&lt;quote&gt;dhs_survey_listing&lt;quote&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLCreator_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="54"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="53"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="55"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 REQUESTOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="46"
+#!   TARGET_NODE="32"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="51"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 0 MERGED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="48"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="fo 0 MATCHED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="35"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="33"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="33"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 SUPPLIER"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="45"
+#!   SOURCE_NODE="41"
+#!   TARGET_NODE="44"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="62"
+#!   SOURCE_NODE="41"
+#!   TARGET_NODE="61"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="49"
+#!   SOURCE_NODE="43"
+#!   TARGET_NODE="52"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="64"
+#!   SOURCE_NODE="44"
+#!   TARGET_NODE="63"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="56"
+#!   SOURCE_NODE="52"
+#!   TARGET_NODE="41"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="65"
+#!   SOURCE_NODE="63"
+#!   TARGET_NODE="34"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="44"
+#!   TARGET_NODE="27"
+#!   SOURCE_PORT_DESC="fo 2 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 27
+GUI IGNORE SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,DestDataset_CSV_1,CSV_OUT_EXTENSION_CSV_1,CSV_OUT_APPEND_CSV_1,CSV_OUT_FIELD_NAMES_CSV_1,CSV_OUT_WRITE_SCHEMA_FILE_CSV_1,CSV_OUT_PREPEND_SCHEMA_FILE_CSV_1,CSV_OUT_SEPARATOR_CSV_1,CSV_OUT_ENCODING_CSV_1,CSV_OUT_WRITE_UTF8_BOM_CSV_1,CSV_OUT_QUOTE_OUTPUT_CSV_1,CSV_OUT_QUOTE_FIELD_NAMES_CSV_1,CSV_OUT_END_OF_LINE_CSV_1
+DEFAULT_MACRO Children_Info_SQL $(FME_MF_DIR_ENCODED)HH_Level_Children_Health_Generic_Query_2018.sql
+GUI FILENAME_EXISTING_ENCODED Children_Info_SQL All_Files(*)|* SQL file for the extraction:
+DEFAULT_MACRO DestDataset_CSV C:\Users\zool1301.NDPH\Documents\DHS\Processing\child_health_20190403
+GUI DIRNAME DestDataset_CSV Destination CSV (Comma Separated Value) Folder:
+INCLUDE [ if {{$(Children_Info_SQL)} == {}} { puts_real {Parameter 'Children_Info_SQL' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CSV)} == {}} { puts_real {Parameter 'DestDataset_CSV' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} NULL
+MULTI_READER_FORMAT{0} XLSXR
+MULTI_READER_KEYWORD{0} XLSXR_1
+MULTI_READER_GEN_DIRECTIVES{0} EXPOSE_ATTRS_GROUP,,EXCEL_COL_NAMES,YES,SCHEMA,,CONFIGURATION_DATASET,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,FORCE_DATETIME,NO,USE_SCHEMA_OTHER_FILES,No,SCAN_SCHEMA_IF_DYNAMIC,No,XLSXR_EXPOSE_FORMAT_ATTRS,,TABLELIST,All_surveys_with_notes,READ_BLANK_AS,Missing,EXPAND_MERGED_CELLS,Yes,ADVANCED,,_MERGE_SCHEMAS,YES
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} CSV
+MULTI_WRITER_KEYWORD{0} CSV_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXR_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+DEFAULT_MACRO SourceDataset_XLSXR_1 \\map-fs1.ndph.ox.ac.uk\map_data\DHS_Automation\SupportingInfo\Standard country codes.xlsx
+GUI MULTIFILE SourceDataset_XLSXR_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+#GUI GROUP TABLELIST Constraints
+DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1 
+XLSXR_1_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1)"
+# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
+# To better match up with Excel files
+DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1 YES
+XLSXR_1_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_1 NO
+XLSXR_1_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_ADVANCED_XLSXR_1 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_1 SCAN_SCHEMA_IF_DYNAMIC%USE_SCHEMA_OTHER_FILES%READ_BLANK_AS%EXPAND_MERGED_CELLS Advanced
+DEFAULT_MACRO XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 No
+XLSXR_1_SCAN_SCHEMA_IF_DYNAMIC "$(XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 Yes%No Scan Schema in Dynamic Workflow:
+DEFAULT_MACRO XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1 No
+XLSXR_1_USE_SCHEMA_OTHER_FILES "$(XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing
+XLSXR_1_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_1)"
+GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing%Null Read blank cells as:
+DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes
+XLSXR_1_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes%No Expand Merged Cells:
+DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 
+XLSXR_1_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1)"
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 XLSXR_EXPOSE_FORMAT_ATTRS Schema Attributes
+DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1 Yes
+XLSXR_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1)"
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 
+XLSXR_1_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1)"
+GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_1 ALL
+XLSXR_1_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_1)"
+XLSXR_1_DATASET "$(SourceDataset_XLSXR_1)"
+XLSXR_1_GENERATE_FME_BUILD_NUM 16492
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_1
+# ============================================================================
+# The following GUI line prompts for a folder where the
+# CSV files will be stored
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CSV_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_1
+DEFAULT_MACRO DestDataset_CSV_1 $(DestDataset_CSV)
+GUI DIRNAME DestDataset_CSV_1 Destination CSV (Comma Separated Value) Folder:
+CSV_1_PLUGIN_MAX_CHANNELS 100
+CSV_1_ALLOW_TYPE_TRUNCATION yes
+CSV_1_PERMISSIVE_TYPES yes
+# ============================================================================
+# The following determines the extension for output CSV files
+DEFAULT_MACRO CSV_OUT_EXTENSION_CSV_1 csv
+CSV_1_EXTENSION "$(CSV_OUT_EXTENSION_CSV_1)"
+GUI OPTIONAL TEXT CSV_OUT_EXTENSION_CSV_1 Extension:
+# =====================================================================
+# Allows one to append
+DEFAULT_MACRO CSV_OUT_APPEND_CSV_1 No
+CSV_1_APPEND "$(CSV_OUT_APPEND_CSV_1)"
+GUI OPTIONAL CHECKBOX CSV_OUT_APPEND_CSV_1 Yes%No Append to File:
+# ============================================================================
+# The following determines whether field names will be written on
+# the first row of the file.
+DEFAULT_MACRO CSV_OUT_FIELD_NAMES_CSV_1 yes
+CSV_1_FIELD_NAMES "$(CSV_OUT_FIELD_NAMES_CSV_1)"
+GUI OPTIONAL CHECKBOX CSV_OUT_FIELD_NAMES_CSV_1 yes%no Output Field Names on First Line:
+# ============================================================================
+# Write out schema.ini file (PR#58638)
+DEFAULT_MACRO CSV_OUT_WRITE_SCHEMA_FILE_CSV_1 no
+CSV_1_WRITE_SCHEMA_FILE "$(CSV_OUT_WRITE_SCHEMA_FILE_CSV_1)"
+GUI ACTIVECHOICE CSV_OUT_WRITE_SCHEMA_FILE_CSV_1 yes%no,CSV_OUT_PREPEND_SCHEMA_FILE Write Schema Configuration File
+# ============================================================================
+# Allows for appending to existing schema.ini file (PR#58638)
+DEFAULT_MACRO CSV_OUT_PREPEND_SCHEMA_FILE_CSV_1 no
+CSV_1_PREPEND_SCHEMA_FILE "$(CSV_OUT_PREPEND_SCHEMA_FILE_CSV_1)"
+GUI CHOICE CSV_OUT_PREPEND_SCHEMA_FILE_CSV_1 yes%no Prepend To Existing Schema Configuration File
+# ============================================================================
+# The following determines the field seperator
+# PR#19714 Changed GUI LOOKUP to STRING_OR_CHOICE for showing space and tab
+# as explicit delimiters for parsing issues and symmetry with the reader.
+DEFAULT_MACRO CSV_OUT_SEPARATOR_CSV_1 ,
+CSV_1_SEPARATOR "$(CSV_OUT_SEPARATOR_CSV_1)"
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_SEPARATOR_CSV_1 ,%;%|%space%tab Separator Character:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO CSV_OUT_ENCODING_CSV_1 
+CSV_1_ENCODING "$(CSV_OUT_ENCODING_CSV_1)"
+GUI OPTIONAL STRING_OR_ENCODING CSV_OUT_ENCODING_CSV_1 SYSTEM%* Character Encoding:
+# =====================================================================
+# PR 15909
+# The following choice determines if the byte order mark should be written
+# when using UTF-8 encoding. By default BOM is written, so _WRITE_UTF8_BOM should be yes.
+DEFAULT_MACRO CSV_OUT_WRITE_UTF8_BOM_CSV_1 yes
+CSV_1_WRITE_UTF8_BOM "$(CSV_OUT_WRITE_UTF8_BOM_CSV_1)"
+GUI CHOICE CSV_OUT_WRITE_UTF8_BOM_CSV_1 yes%no Write UTF-8 Byte Order Mark
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO CSV_OUT_DESTINATION_DATASETTYPE_VALIDATION_CSV_1 Yes
+CSV_1_DESTINATION_DATASETTYPE_VALIDATION "$(CSV_OUT_DESTINATION_DATASETTYPE_VALIDATION_CSV_1)"
+# =====================================================================
+DEFAULT_MACRO CSV_OUT_QUOTE_OUTPUT_CSV_1 if_needed
+CSV_1_QUOTE_OUTPUT "$(CSV_OUT_QUOTE_OUTPUT_CSV_1)"
+GUI CHOICE CSV_OUT_QUOTE_OUTPUT_CSV_1 yes%if_needed%no Quote Output Values:
+DEFAULT_MACRO CSV_OUT_QUOTE_FIELD_NAMES_CSV_1 no
+CSV_1_QUOTE_FIELD_NAMES "$(CSV_OUT_QUOTE_FIELD_NAMES_CSV_1)"
+GUI CHOICE CSV_OUT_QUOTE_FIELD_NAMES_CSV_1 yes%no Quote Field Names:
+DEFAULT_MACRO CSV_OUT_END_OF_LINE_CSV_1 
+CSV_1_END_OF_LINE "$(CSV_OUT_END_OF_LINE_CSV_1)"
+GUI OPTIONAL CHOICE CSV_OUT_END_OF_LINE_CSV_1 Windows%Unix%Macintosh Line Termination:
+CSV_1_DATASET "$(DestDataset_CSV_1)"
+CSV_1_GENERATE_FME_BUILD_NUM 16492
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)extended_children_info_fme_sql_runner.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
+DEFAULT_MACRO DATASET_KEYWORD_CSV_1 CSV_1
+# -------------------------------------------------------------------------
+
+XLSXR_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME extended_children_info_fme_sql_runner
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_XLSXR_1)   INPUT FEATURE_TYPE *   OUTPUT ROUTED FEATURE_TYPE *
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+MACRO SQLCreator_DIRECTIVES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes SCHEMAS_FOR_TABLE_LISTING "dhs_data_locations dhs_data_tables" NAMED_CONNECTION DHS<space>Data<space>Readonly
+FACTORY_DEF * CreationFactory    FACTORY_NAME SQLCreator_Creator    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            select<space>distinct<space>surveyid<comma>hv000<space>from<space>dhs_data_tables.<quote>RECH0<quote>    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          POSTGRES    READER_DATASET       "DHS<space>Data<space>Readonly"    READER_PARAMS        $(SQLCreator_DIRECTIVES)    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_<REJECTED>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLCreator RESULT Splitter"   INPUT FEATURE_TYPE SQLCreator_RESULT   OUTPUT FEATURE_TYPE SQLCreator_RESULT_0_sjsReQioa5E=   OUTPUT FEATURE_TYPE SQLCreator_RESULT_1_LV2HdoY65lk=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLCreator <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE SQLCreator_<REJECTED>
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "SQLCreator_RESULT_0_sjsReQioa5E= Brancher -1 54"   INPUT FEATURE_TYPE SQLCreator_RESULT_0_sjsReQioa5E=   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "SQLCreator_RESULT_1_LV2HdoY65lk= Brancher -1 55"   INPUT FEATURE_TYPE SQLCreator_RESULT_1_LV2HdoY65lk=   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+MACRO SQLCreator_2_DIRECTIVES SCHEMAS_FOR_TABLE_LISTING dhs_survey_specs NAMED_CONNECTION DHS<space>Data<space>Readonly READ_TIME_WITH_TIMEZONE Yes QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes
+FACTORY_DEF * CreationFactory    FACTORY_NAME SQLCreator_2_Creator    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator_2    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            select<space>*<space>from<space><quote>dhs_survey_specs<quote>.<quote>dhs_survey_listing<quote>    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          POSTGRES    READER_DATASET       "DHS<space>Data<space>Readonly"    READER_PARAMS        $(SQLCreator_2_DIRECTIVES)    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT RESULT FEATURE_TYPE SQLCreator_2_RESULT        @SupplyAttributes(fme_feature_type,SQLCreator_2)    OUTPUT READER_ERROR FEATURE_TYPE SQLCreator_2_<REJECTED>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLCreator_2 <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE SQLCreator_2_<REJECTED>
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "SQLCreator_2_RESULT Brancher -1 29"   INPUT FEATURE_TYPE SQLCreator_2_RESULT   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester_2    INPUT  FEATURE_TYPE SQLCreator_2_RESULT    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>regionname<closeparen>,Tester_2) BEGINS_WITH Sub-Saharan ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_2_PASSED
+# -------------------------------------------------------------------------
+INCLUDE [    set macroLine "MACRO AttributeKeeper_4_8cdb929e_a901_4802_9696_3cb8280f590e2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper_4    INPUT  FEATURE_TYPE Tester_2_PASSED    OUTPUT { FEATURE_TYPE AttributeKeeper_4_OUTPUT        @KeepAttributes(fme_encoded,countryname,surveytype,surveyyear,surveynum,dhs_countrycode,fme_pcre_match,"^fme_$(AttributeKeeper_4_8cdb929e_a901_4802_9696_3cb8280f590e2_LIST_EXP)")         }
+# -------------------------------------------------------------------------
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE SQLCreator_RESULT_1_LV2HdoY65lk=    INPUT REFERENCEE FEATURE_TYPE AttributeKeeper_4_OUTPUT    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>surveyid<closeparen>,FeatureMerger) @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>surveynum<closeparen>,FeatureMerger) AUTO    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "REQUESTOR_IF_CONFLICT"    IGNORE_NULLS "No"    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 No    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED
+# -------------------------------------------------------------------------
+MACRO casemac
+INCLUDE [ if { {no} == {no} } { puts {MACRO casemac -nocase}} ]
+Tcl2 proc StringSearcher_4bf5e604_f846_4b4a_9b02_a71ee344218e2_doGrep { stringToSearch regExp matchedChars matches matchedParts } {   set subMatches 1;   set matches [FME_DecodeText $matches];   set matchedParts [FME_DecodeText $matchedParts];   set results [FME_GetRegex $(casemac) [FME_DecodeText $regExp] [FME_DecodeText $stringToSearch]];   if {[llength [lindex $results 0]] > 0} {      set attrName [FME_DecodeText $matchedChars];      FME_SetAttribute $attrName [lindex [lindex [lindex $results 0] 0] 0];      set index 0;      set parts [lindex $results 1];      foreach part $parts {         if {[llength $matchedParts] > 0} {             set attrName "$matchedParts{$index}.part";             FME_SetAttribute $attrName [lindex $part 0];             set attrName "$matchedParts{$index}.startIndex";             FME_SetAttribute $attrName [lindex $part 1];         };         incr index;      };      set index 0;      set regexMatches [lindex $results 0];      foreach part $regexMatches {         if {[llength $matches] > 0} {             set attrName "$matches{$index}.match";             FME_SetAttribute $attrName [lindex $part 0];             set attrName "$matches{$index}.startIndex";             FME_SetAttribute $attrName [lindex $part 1];         };         set isFirstMatch 0;         incr index;      };      return $index;   };   return -1; }
+FACTORY_DEF * TestFactory    FACTORY_NAME StringSearcher    INPUT  FEATURE_TYPE FeatureMerger_MERGED    TEST @Tcl2("StringSearcher_4bf5e604_f846_4b4a_9b02_a71ee344218e2_doGrep {@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>hv000<closeparen>,StringSearcher)} {<backslash>d<dollar>} {phase} {} {}") > 0    OUTPUT PASSED FEATURE_TYPE StringSearcher_MATCHED
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_LOOKUP_TABLE   1               <dollar><openparen>FME_MF_DIR<closeparen>Extended_Building_Quality_Generic_Query_Old_Surveys.sql   ""              @EvaluateExpression(FDIV,STRING_ENCODED,$(Children_Info_SQL),AttributeValueMapper)   ENCODED_SUPPORTUNICODE
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeValueMapper    INPUT  FEATURE_TYPE StringSearcher_MATCHED    OUTPUT FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"phase",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, _SQL)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeFileReader_3    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    OUTPUT FEATURE_TYPE AttributeFileReader_3_OUTPUT         @File(ENCODED_PARAMS,DestReadSrcWrite,_SQL,"@EvaluateExpression(FDIV,STRING_ENCODED,$(Children_Info_SQL),AttributeFileReader_3)",utf-8)
+# -------------------------------------------------------------------------
+MACRO casemac
+INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
+Tcl2 proc StringReplacer_3_d51512ff_f84d_4dc1_a06c_bfc3eb3956b42_replacer { findText replaceText invalidValue} {     set attrs [split \"_SQL\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_3    INPUT  FEATURE_TYPE AttributeFileReader_3_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_3_OUTPUT         @Tcl2("StringReplacer_3_d51512ff_f84d_4dc1_a06c_bfc3eb3956b42_replacer {<opencurly>SURVEYID<closecurly>} {@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>surveyid<closeparen>,StringReplacer_3)} {_FME_NO_OP_}")
+FACTORY_DEF * TeeFactory   FACTORY_NAME "StringReplacer_3 OUTPUT Splitter"   INPUT FEATURE_TYPE StringReplacer_3_OUTPUT   OUTPUT FEATURE_TYPE StringReplacer_3_OUTPUT_0_k/gvzqqWtRo=   OUTPUT FEATURE_TYPE StringReplacer_3_OUTPUT_1_1600Nn30ZUQ=
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "StringReplacer_3_Output (Disabled) Nuker"   INPUT FEATURE_TYPE StringReplacer_3_OUTPUT_1_1600Nn30ZUQ=
+# -------------------------------------------------------------------------
+MACRO SQLExecutor_2_DIRECTIVES QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes READ_TIME_WITH_TIMEZONE Yes NAMED_CONNECTION DHS<space>Data<space>Readonly SCHEMAS_FOR_TABLE_LISTING dhs_data_tables
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLExecutor_2    INPUT  FEATURE_TYPE StringReplacer_3_OUTPUT_0_k/gvzqqWtRo=    QUERY_SQL            "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_SQL<closeparen>,SQLExecutor_2)"    READER_TYPE          POSTGRES    READER_DATASET       "DHS<space>Data<space>Readonly"    COMBINE_ATTRIBUTES   PREFER_RESULT    COMBINE_GEOMETRY     QUERY_ONLY    CONTINUE_ON_READER_ERROR YES    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    READER_PARAMS        $(SQLExecutor_2_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLExecutor_2_RESULT    OUTPUT QUERY FEATURE_TYPE SQLExecutor_2_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE SQLExecutor_2_<REJECTED>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLExecutor_2 INITIATOR Transformer Output Nuker"   INPUT FEATURE_TYPE SQLExecutor_2_INITIATOR
+# -------------------------------------------------------------------------
+# Set the directive to add all the meta-attributes to the features.
+# We do this so users see all possible information in the viewed
+# features.
+READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {SQLExecutor_2__Rejected_} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME SQLExecutor_2__Rejected__DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME SQLExecutor_2__Rejected__DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+FACTORY_DEF * TestFactory    FACTORY_NAME SQLExecutor_2__Rejected__FeatureDirector    INPUT  FEATURE_TYPE SQLExecutor_2_<REJECTED>    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE SQLExecutor_2__Rejected____NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE SQLExecutor_2__Rejected____RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME SQLExecutor_2__Rejected____FeatureDirector1    INPUT FEATURE_TYPE SQLExecutor_2__Rejected____NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE SQLExecutor_2__Rejected____VectorFeatures___    OUTPUT PASSED FEATURE_TYPE SQLExecutor_2__Rejected____PointCloudFeatures___
+# Vector features simply may get their colors overridden
+FACTORY_DEF * TeeFactory    FACTORY_NAME SQLExecutor_2__Rejected__VectorSetterUpper    INPUT FEATURE_TYPE SQLExecutor_2__Rejected____VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+Tcl2 proc SQLExecutor_2__Rejected__42807da1_4671_40fb_9291_4389031445b52_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME SQLExecutor_2__Rejected____PointCloudThinner    INPUT FEATURE_TYPE SQLExecutor_2__Rejected____PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("SQLExecutor_2__Rejected__42807da1_4671_40fb_9291_4389031445b52_thinPointCloud")
+Tcl2 proc SQLExecutor_2__Rejected__42807da1_4671_40fb_9291_4389031445b52_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME SQLExecutor_2__Rejected__RasterSetterUpper    INPUT FEATURE_TYPE SQLExecutor_2__Rejected____RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("SQLExecutor_2__Rejected__42807da1_4671_40fb_9291_4389031445b52_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# SQLExecutor_2__Rejected__42807da1_4671_40fb_9291_4389031445b52_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+DEFAULT_MACRO SQLExecutor_2__Rejected__42807da1_4671_40fb_9291_4389031445b52_VIS_FEAT_TYPE SQLExecutor_2__Rejected_$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME SQLExecutor_2__Rejected__Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(SQLExecutor_2__Rejected__42807da1_4671_40fb_9291_4389031445b52_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA hv000,varchar<openparen>255<closeparen>,surveyid,varchar<openparen>255<closeparen>,countryname,varchar<openparen>255<closeparen>,dhs_countrycode,varchar<openparen>255<closeparen>,surveynum,varchar<openparen>255<closeparen>,surveytype,varchar<openparen>255<closeparen>,surveyyear,varchar<openparen>255<closeparen>,phase,varchar<openparen>255<closeparen>,_SQL,varchar<openparen>255<closeparen>,_reader_error,varchar<openparen>255<closeparen>,b8_child_age,varchar<openparen>255<closeparen>,birth_order,varchar<openparen>255<closeparen>,child_hh_line_num,varchar<openparen>255<closeparen>,child_sex,varchar<openparen>255<closeparen>,cluster_id_full,varchar<openparen>255<closeparen>,desc_child_sex,varchar<openparen>255<closeparen>,h1_desc_has_health_card,varchar<openparen>255<closeparen>,h1_has_health_card,varchar<openparen>255<closeparen>,h7_received_dpt3,varchar<openparen>255<closeparen>,h9_received_measles,varchar<openparen>255<closeparen>,h11_desc_had_diarrhea_recently,varchar<openparen>255<closeparen>,h11_had_diarrhea_recently,varchar<openparen>255<closeparen>,h22_had_fever_recently,varchar<openparen>255<closeparen>,h31_had_cough_recently,varchar<openparen>255<closeparen>,h31b_short_rapid_breaths,varchar<openparen>255<closeparen>,h31c_problem_in_chest,varchar<openparen>255<closeparen>,h34_had_vitamin_a,varchar<openparen>255<closeparen>,h56_received_pneumococcal,varchar<openparen>255<closeparen>,h58_received_rv2,varchar<openparen>255<closeparen>,hc5_ht_age_stdev,varchar<openparen>255<closeparen>,hc8_wt_age_stdev,varchar<openparen>255<closeparen>,hc11_wt_ht_stdev,varchar<openparen>255<closeparen>,hc56_hb_adj_alt,varchar<openparen>255<closeparen>,hc57_anemia_level,varchar<openparen>255<closeparen>,hc57_desc_anemia_level,varchar<openparen>255<closeparen>,hc61_desc_mother_highest_ed_lvl,varchar<openparen>255<closeparen>,hc61_mother_highest_ed_lvl,varchar<openparen>255<closeparen>,hc62_desc_mother_highest_ed_yr,varchar<openparen>255<closeparen>,hc62_mother_highest_ed_yr,varchar<openparen>255<closeparen>,hc70_ht_age_stdev_who,varchar<openparen>255<closeparen>,hc71_wt_age_stdev_who,varchar<openparen>255<closeparen>,hc72_wt_ht_stdev_who,varchar<openparen>255<closeparen>,hhid,varchar<openparen>255<closeparen>,hml_20_sleep_under_llin,varchar<openparen>255<closeparen>,hml12_desc_type_net_slept_last_night,varchar<openparen>255<closeparen>,hml12_type_net_slept_last_night,varchar<openparen>255<closeparen>,hml19_sleep_under_ever_treated_net,varchar<openparen>255<closeparen>,hml22_desc_had_fever_recently,varchar<openparen>255<closeparen>,hml31_desc_had_cough_recently,varchar<openparen>255<closeparen>,hml31b_desc_short_rapid_breaths,varchar<openparen>255<closeparen>,hml31c_desc_problem_in_chest,varchar<openparen>255<closeparen>,hml32_desc_result_mal_smear_test,varchar<openparen>255<closeparen>,hml32_result_mal_smear_test,varchar<openparen>255<closeparen>,hml33_desc_mal_smear_test_status,varchar<openparen>255<closeparen>,hml33_mal_smear_test_status,varchar<openparen>255<closeparen>,hml35_desc_result_mal_rapid_test,varchar<openparen>255<closeparen>,hml35_result_mal_rapid_test,varchar<openparen>255<closeparen>,hv000_ccode_phase,varchar<openparen>255<closeparen>,hv002_hh_num,varchar<openparen>255<closeparen>,hv006_interview_mth,varchar<openparen>255<closeparen>,hv007_interview_yr,varchar<openparen>255<closeparen>,hv008_child_age_cmc_calc_months,varchar<openparen>255<closeparen>,hv008_interview_cmc,varchar<openparen>255<closeparen>,hv105_child_age,varchar<openparen>255<closeparen>,latitude,varchar<openparen>255<closeparen>,longitude,varchar<openparen>255<closeparen>,m15_desc_place_of_delivery,varchar<openparen>255<closeparen>,m15_place_of_delivery,varchar<openparen>255<closeparen>,m17_delivery_by_csection,varchar<openparen>255<closeparen>,m19_birthweight_kg_3dec,varchar<openparen>255<closeparen>,m39_times_ate_stuff_yesterday,varchar<openparen>255<closeparen>,survey_release_date,varchar<openparen>255<closeparen>,surveyyear_lbl,varchar<openparen>255<closeparen>,v001_cluster_id,varchar<openparen>255<closeparen>,woman_caseid,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE SQLExecutor_2_RESULT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "_SQL" "_SQL" "" "REMOVE" }      ATTR_ACTION { "hv000" "hv000" "" "REMOVE" }      ATTR_ACTION { "phase" "phase" "" "REMOVE" }      ATTR_ACTION { "woman_caseid" "mother_caseid" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "surveynum" "surveynum" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Tester (Disabled) Nuker"   INPUT FEATURE_TYPE SQLCreator_RESULT_0_sjsReQioa5E=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO CSV __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Children_All_20190403<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
+# -------------------------------------------------------------------------
+CSV_1_DEF Children_All_20190403   csv_append_mode              no   csv_field_names              INHERIT_FROM_WRITER   surveyid                     auto   surveyyear                   auto   surveyyear_lbl               auto   survey_release_date          auto   surveytype                   auto   hv000_ccode_phase            auto   dhs_countrycode              auto   countryname                  auto   v001_cluster_id              auto   cluster_id_full              auto   latitude                     auto   longitude                    auto   hhid                         auto   hv002_hh_num                 auto   hv006_interview_mth          auto   hv007_interview_yr           auto   hv008_interview_cmc          auto   child_hh_line_num            auto   birth_order                  auto   child_sex                    auto   desc_child_sex               auto   b8_child_age                 auto   hv105_child_age              auto   hv008_child_age_cmc_calc_months auto   mother_caseid                auto   hc61_mother_highest_ed_lvl   auto   hc61_desc_mother_highest_ed_lvl auto   hc62_mother_highest_ed_yr    auto   hc62_desc_mother_highest_ed_yr auto   h1_has_health_card           auto   h1_desc_has_health_card      auto   h11_had_diarrhea_recently    auto   h11_desc_had_diarrhea_recently auto   h22_had_fever_recently       auto   hml22_desc_had_fever_recently auto   h31_had_cough_recently       auto   hml31_desc_had_cough_recently auto   h31b_short_rapid_breaths     auto   hml31b_desc_short_rapid_breaths auto   h31c_problem_in_chest        auto   hml31c_desc_problem_in_chest auto   h34_had_vitamin_a            auto   h7_received_dpt3             auto   h56_received_pneumococcal    auto   h58_received_rv2             auto   h9_received_measles          auto   m15_place_of_delivery        auto   m15_desc_place_of_delivery   auto   m17_delivery_by_csection     auto   m19_birthweight_kg_3dec      auto   m39_times_ate_stuff_yesterday auto   hml12_desc_type_net_slept_last_night auto   hml12_type_net_slept_last_night auto   hml19_sleep_under_ever_treated_net auto   hml_20_sleep_under_llin      auto   hml33_mal_smear_test_status  auto   hml33_desc_mal_smear_test_status auto   hml32_result_mal_smear_test  auto   hml32_desc_result_mal_smear_test auto   hml35_result_mal_rapid_test  auto   hml35_desc_result_mal_rapid_test auto   hc70_ht_age_stdev_who        auto   hc71_wt_age_stdev_who        auto   hc72_wt_ht_stdev_who         auto   hc5_ht_age_stdev             auto   hc8_wt_age_stdev             auto   hc11_wt_ht_stdev             auto   hc56_hb_adj_alt              auto   hc57_anemia_level            auto   hc57_desc_anemia_level       auto
