@@ -1,5 +1,5 @@
 -- Attempt to select all questions from the metadata table which relate to antimalarial drugs given to children. 
--- Inevitably this will pull out some irrelevant questions (e.g. the string '%alu%' matches all kinds of shit, and 
+-- Inevitably this will pull out some irrelevant questions (e.g. the string '%alu%' matches all kinds of stuff, and 
 -- sometimes the questions are asked of the mother not the child, or are about general knowledge not specific incidences, etc,
 -- so the results of this query need to be flagged manually to determine whether each question should be used.
 -- Also, this query will likely miss some, particularly country-specific drug names that don't match any of these strings and 

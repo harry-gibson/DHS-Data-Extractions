@@ -6,3 +6,7 @@ Further information on designing, creating, and populating the database, necessa
 
 The repository is arranged into folders, one per data extraction project, each of which has a readme giving more information about the project and implementation.
 
+The code in this repository was all written by Harry Gibson. The majority of the work was done at the [Malaria Atlas Project](https://malariaatlas.org) when it was based in Oxford, UK.
+
+
+
