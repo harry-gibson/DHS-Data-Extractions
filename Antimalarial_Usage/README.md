@@ -43,5 +43,9 @@ The SQL file [extract_antimalarial_value_coding.sql](SQL/extract_antimalarial_va
 
 The FME workbench [create_and_execute_antimalarial_queries.fmw](FME/create_and_execute_antimalarial_queries.fmw) is then run, using the populated spreadsheet as input. The workbench encompasses the necessary information for constructing queries to JOIN the relevant tables and SELECT the necessary columns - one clause for each row in the spreadsheet that has been flagged for use - for each survey in turn. It creates the SQL text, before executing it and saving the results to CSV (as well as saving a copy of the SQL itself for reference).
 
+### History
+
+The folder [Original](./Original) contains a previous version of this work, which was implemented wholly in FME. That is, the workbench did not write queries for every survey but instead read the raw survey data CSVs and then filtered and combined the necessary information within the workbench itself. (This was developed in 2015, before the DHS database was created.) This earlier version only extracted information relating to ACT antimalarials. It is provided here for reference only.
+
 
 
