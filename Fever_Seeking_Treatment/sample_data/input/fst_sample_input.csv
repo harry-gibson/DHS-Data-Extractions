@@ -1,0 +1,52 @@
+surveyid,RecordName,Name,Label,NewPublicTreat,NewAnyTreat
+396,REC43,H32S,Fever/cough: Community health worker (CS other sector),y,y
+396,REC43,H32Q,Fever/cough: CS private medical,n,y
+396,REC43,H32R,Fever/cough: CS private medical,n,y
+396,REC43,H32F,Fever/cough: CS public sector,y,y
+396,REC43,H32G,Fever/cough: CS public sector,y,y
+396,REC43,H32H,Fever/cough: CS public sector,y,y
+396,REC43,H32I,Fever/cough: CS public sector,y,y
+396,REC43,H32M,Fever/cough: Family Planning Center/FISA (CS private medical),n,y
+396,REC43,H32V,"Fever/cough: Friend, family member (CS Other sector)",n,n
+396,REC43,H32B,Fever/cough: government hospital level I,y,y
+396,REC43,H32A,Fever/cough: government hospital level II,y,y
+396,REC43,H32D,Fever/cough: Health center level I,y,y
+396,REC43,H32C,Fever/cough: Health center level II,y,y
+396,REC43,H32W,Fever/cough: Market (CS Other sector),n,n
+396,REC43,H32Z,Fever/cough: medical treatment,y,y
+396,REC43,H32X,Fever/cough: other,n,n
+396,REC43,H32P,Fever/cough: Other CS private medical,n,y
+396,REC43,H32E,Fever/cough: Other public,y,y
+396,REC43,H32L,Fever/cough: private doctor,n,y
+396,REC43,H32O,Fever/cough: Private health center (CS),n,y
+396,REC43,H32J,Fever/cough: private hospital/ clinic,n,y
+396,REC43,H32K,Fever/cough: private pharmacy,n,y
+396,REC43,H32T,Fever/cough: Shop (CS other sector),n,y
+396,REC43,H32N,Fever/cough: TOP network (resau) (CS private medical),n,y
+396,REC43,H32U,Fever/cough: Traditional Healer (CS Other sector),n,n
+485,REC4A,H32S,Fever/cough: ADDO,n,y
+485,REC4A,H32H,Fever/cough: CHW,y,y
+485,REC4A,H32G,Fever/cough: Clinic,y,y
+485,REC4A,H32F,Fever/cough: Dispensary,n,y
+485,REC4A,H32D,Fever/cough: District Hospital,y,y
+485,REC4A,H32A,Fever/cough: government hospital,y,y
+485,REC4A,H32E,Fever/cough: Health Center,y,y
+485,REC4A,H32N,Fever/cough: Health Centre,y,y
+485,REC4A,H32T,Fever/cough: NGO,n,y
+485,REC4A,H32Y,Fever/cough: no treatment,n,n
+485,REC4A,H32X,Fever/cough: other,n,n
+485,REC4A,H32P,Fever/cough: Private  Clinic,n,y
+485,REC4A,H32O,Fever/cough: Private Dispensary,n,y
+485,REC4A,H32J,Fever/cough: private hospital/ clinic,n,y
+485,REC4A,H32K,Fever/cough: private pharmacy,n,y
+485,REC4A,H32C,Fever/cough: Regional Hospital,y,y
+485,REC4A,H32B,Fever/cough: Regional Referral Hospital,y,y
+485,REC4A,H32U,Fever/cough: Religious/voluntary medical,n,y
+485,REC4A,H32M,Fever/cough: Specialized Hospital,y,y
+485,REC4A,H32V,NA - Fever/cough: CS other sector,n,n
+485,REC4A,H32W,NA - Fever/cough: CS other sector,n,n
+485,REC4A,H32Q,NA - Fever/cough: CS private medical,n,n
+485,REC4A,H32R,NA - Fever/cough: CS private medical,n,n
+485,REC4A,H32I,NA - Fever/cough: CS public sector,n,n
+485,REC4A,H32Z,NA - Fever/cough: medical treatment,n,n
+485,REC4A,H32L,NA - Fever/cough: private doctor,n,n
