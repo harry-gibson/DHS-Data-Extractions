@@ -25,15 +25,19 @@ Firstly, we select all possibly-relevant rows (questions) from the survey metada
 | 334 | REC43 | H37F | Antihistanimico | *N* |
 | 211 | REC43 | H37G | Quinine taken for fever | *Y* |
 
-This example shows one (of many) rows where the quinine question is in column H37F, one row where H37F means something different, and one row where the quinine question is somewhere else. This spreadsheet is dumped from the metadata table, and then it is the task of the malaria researcher to populate the "use_as_quinine_output" column to identify the survey/column pairs which should be selected for this output. In reality the table has several more columns for other drugs (chloroquine, artesunate, etc).
+This example shows one (of many) rows where the quinine question is in column H37F, one row where H37F means something different, and one row where the quinine question is somewhere else. This spreadsheet is dumped from the metadata table, and then it is the task of the malaria researcher to populate the "use_as_quinine_output" column to identify the survey/column pairs which should be selected for this output. 
+
+*In reality the table has many different rows for Quinine (it can be found in other questions apart from those mentioned above) and several more output columns for other drugs (chloroquine, artesunate, etc), and thus many rows (potential survey questions).*
 
 Secondly, we read this populated spreadsheet table and use it to construct a bespoke SQL query for each survey. For this project, this has been implemented using an FME workbench. This "writes" and executes the SQL for each survey in turn, saving the results to a common output file. 
 
 ### Usage history
 
-TBD (in preparation)
+TBD (publication in preparation)
 
 ### Implementation
+
+The two-part process used here, of extracting metadata, flagging it, then creating queries based on the flags, was first developed for the DHS [Fever-seeking-treatment work](https://github.com/harry-gibson/dhs-fever-seeking-treatment).
 
 The SQL file [extract_antimalarial_value_coding.sql](SQL/extract_antimalarial_value_coding.sql) creates the value coding spreadsheet described above. This spreadsheet should then be passed to the researcher with suitable knowledge to add and populate columns for "use_as_quinine_output", etc, as described.
 
