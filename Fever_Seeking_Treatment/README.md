@@ -43,6 +43,7 @@ More recently the treatment seeking for fever data have become a part of the ove
 
 [Mapping the global prevalence, incidence, and mortality of Plasmodium falciparum, 2000–17: a spatial and temporal modelling study](https://doi.org/10.1016/s0140-6736(19)31097-9); Weiss et al., *The Lancet*, 2019
 
+This implementation was presented at the 2020 Safe Software (online) FME conference. Slides for the presentation can be found [here](https://docs.google.com/presentation/d/1O9derTkDX74zYMrnaYQU0BKtb39U8ZWiY1q2PeAocmc).
 
 ### Implementation
 
