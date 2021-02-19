@@ -13,9 +13,9 @@ The required output in these studies is a child-level dataset tabulating whether
 
 The question "did the child have fever in the last two weeks" is directly present in the surveys. However information about where treatment is sought for a fever is stored in DHS surveys in a combination of many different columns, each of which specifies a particular location or type of location that may provide treatment with a yes/no answer for whether the child was taken there.
 
-These are generally columns H32A - H32Z of table REC43; occasionally these columns are to be found in a different table (REC4A in all newer surveys). The meaning of each column (i.e. the location it corresponds to) varies between surveys, within certain constraints.
+These are generally columns `H32A` - `H32Z` of table `REC43`; occasionally these columns are to be found in a different table (`REC4A` in all newer surveys). The meaning of each column (i.e. the location it corresponds to) varies between surveys, within certain constraints.
 
-For example column H32A will always mean "Sought treatment for the fever in &lt;some form of public hospital&gt;", where the exact wording will vary between surveys. However other questions vary more significantly: H32Q might mean "sought treatment in a private clinic" in one survey, but "sought treatment from a traditional medicine practitioner" in another survey. In the first case we would want to count that answer as having sought medical treatment, but in the second case we would not.
+For example column `H32A` will always mean "Sought treatment for the fever in &lt;some form of public hospital&gt;", where the exact wording will vary between surveys. However other questions vary more significantly: `H32Q` might mean "sought treatment in a private clinic" in one survey, but "sought treatment from a traditional medicine practitioner" in another survey. In the first case we would want to count that answer as having sought medical treatment, but in the second case we would not.
 
 The first "few" columns alphabetically will always refer to public treatment sources, but "few" is not a constant. Later columns tend to vary more in their meaning.
 
