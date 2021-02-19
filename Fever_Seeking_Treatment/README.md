@@ -6,7 +6,6 @@ FME workbench to create and execute SQL code for extracting information on treat
 
 README updated 2021-02-18, HSG
 
-This is a re-written version of the code to extract Fever-Treatment-Seeking data from DHS surveys within the [Malaria Atlas Project](http://www.map.ox.ac.uk) (MAP).
 
 ### Description
 
