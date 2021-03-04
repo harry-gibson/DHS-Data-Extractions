@@ -15,7 +15,7 @@ Especially in the children's section of the extraction, there were numerous coun
  
 ### Usage history
 
-This folder contains the code that was developed and used to extract the datasets for the study [Housing and child health in sub-Saharan Africa: A cross-sectional analysis](https://doi.org/10.1371/journal.pmed.1003055) (Tusting et al., *PLoS Medicine*, 2020)
+This folder contains the code that was developed and used to extract the datasets for the study [Housing and child health in sub-Saharan Africa: A cross-sectional analysis](https://doi.org/10.1371/journal.pmed.1003055) (Tusting et al., *PLoS Medicine*, 2020), and [Environmental temperature and growth faltering in African children: a cross-sectional study](https://doi.org/10.1016/s2542-5196(20)30037-1); (Tusting et al., Lancet Planetary Health, 2020)
 
 #### Relationship to previous studies 
 
