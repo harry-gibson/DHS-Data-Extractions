@@ -54,30 +54,6 @@ mort as (SELECT
 			ELSE 0 END
 		) AS num_u5,
 
-    -- U5 whole units only
-	-- Denominator: all children who were born at least 60 months before survey
-	--  			plus those who were born later but have died
-	SUM (
-		CASE WHEN
-			v008_int_cmc - b3_dob_cmc >= consts.max_age_u5
-				OR
-			b7_death_age_months < consts.max_age_u5
-			THEN sample_wt::FLOAT/1000000
-			ELSE 0 END
-		) as denom_u5_whole,
-	-- Numerator: of all children who were born at least 60 months before survey
-    --			  plus those who were born later but have died, those who have died
-	--			  at < 60 months age
-	SUM (
-		CASE WHEN
-			(v008_int_cmc - b3_dob_cmc >= consts.max_age_u5
-				OR
-			b7_death_age_months < consts.max_age_u5)
-				AND b5_is_alive=0 AND b7_death_age_months < consts.max_age_u5
-			THEN sample_wt::FLOAT/1000000
-			ELSE 0 END
-		) AS num_u5_whole,
-
     -- Infant
 	-- Denominator: all children who were born at least 12 months before survey
 	--              count as 1; all those born later count as 0.5
@@ -108,30 +84,6 @@ mort as (SELECT
 		    THEN sample_wt::FLOAT/2000000
 			ELSE 0 END
 		) AS num_inf,
-
-	-- Infant whole units only
-	-- Denominator: all children who were born at least 12 months before survey 
-	--  			plus those who were born later but have died
-	SUM (
-		CASE WHEN 
-			v008_int_cmc - b3_dob_cmc >= consts.max_age_inf 
-				OR  
-			b7_death_age_months < consts.max_age_inf
-			THEN sample_wt::FLOAT/1000000 
-			ELSE 0 END
-		) as denom_inf_whole,
-	-- Numerator: of all children who were born at least 12 months before survey 
-    --			  plus those who were born later but have died, those who have died 
-	--			  at < 12 months age
-	SUM (
-		CASE WHEN 
-			(v008_int_cmc - b3_dob_cmc >= consts.max_age_inf 
-				OR
-			b7_death_age_months < consts.max_age_inf)
-				AND b5_is_alive=0 AND b7_death_age_months < consts.max_age_inf
-			THEN sample_wt::FLOAT/1000000 
-			ELSE 0 END
-		) AS num_inf_whole,
 
 	-- Neonatal
 	-- Denominator: all children who were born at least 1 month before survey
@@ -164,31 +116,7 @@ mort as (SELECT
 			ELSE 0 END
 		) AS num_nn,
 
-    -- Neonatal
-	-- Denominator: all children who were born at least 1 month before survey 
-	--  			plus those who were born later but have died
-	SUM (
-		CASE WHEN 
-			(v008_int_cmc - b3_dob_cmc >= consts.max_age_nn 
-				OR
-			b7_death_age_months < consts.max_age_inf)
-			THEN sample_wt::FLOAT/1000000 
-			ELSE 0 END
-		) as denom_nn_whole,
-	-- Numerator: of all children who were born at least 1 month before survey 
-    --			  plus those who were born later but have died, those who have died 
-	--			  at < 1 months age
-	SUM (
-		CASE WHEN 
-			(v008_int_cmc - b3_dob_cmc >= consts.max_age_nn 
-				OR
-			b7_death_age_months < consts.max_age_nn)
-				AND b5_is_alive=0 AND b7_death_age_months < consts.max_age_nn
-			THEN sample_wt::FLOAT/1000000 
-			ELSE 0 END
-		) AS num_nn_whole,
-
-	-- weighted total children in group		
+	-- weighted total children in group
 	SUM (sample_wt::FLOAT/1000000) AS tot,
 	-- unweighted total children in group
 	count(*) AS nrows
@@ -199,11 +127,8 @@ mort as (SELECT
 SELECT surveyid, clusterid, lat, lon,
     tot AS total_children_wt,
 	CASE WHEN denom_u5>0 THEN num_u5 / denom_u5 ELSE null END AS mort_u5,
-    --CASE WHEN denom_u5_whole>0 THEN num_u5_whole / denom_u5_whole ELSE null END AS mort_u5_1,
 	CASE WHEN denom_inf>0 THEN num_inf / denom_inf ELSE null END AS mort_inf,
-    --CASE WHEN denom_inf_whole>0 THEN num_inf_wh  ole / denom_inf_whole ELSE null END AS mort_inf_1,
 	CASE WHEN denom_nn>0 THEN num_nn / denom_nn ELSE null END AS mort_nn
-    --CASE WHEN denom_nn_whole>0 THEN num_nn_whole / denom_nn_whole ELSE null END AS mort_nn_1
 
 	FROM mort
 WHERE denom_u5 != 0
