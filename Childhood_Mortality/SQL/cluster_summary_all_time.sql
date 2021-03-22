@@ -207,4 +207,4 @@ SELECT surveyid, clusterid, lat, lon,
 
 	FROM mort
 WHERE denom_u5 != 0
-ORDER BY surveyid::INTEGER --, clusterid::INTEGER
+ORDER BY surveyid::INTEGER, clusterid::INTEGER
