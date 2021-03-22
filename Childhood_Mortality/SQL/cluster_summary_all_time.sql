@@ -21,7 +21,7 @@ consts as (SELECT
 			   	1 AS max_age_nn
 ),
 mort as (SELECT 
-	surveyid,-- clusterid, lat, lon,
+	surveyid, clusterid, lat, lon,
 
 	-- Under-5
 	-- Denominator: all children who were born at least 60 months before survey
@@ -193,16 +193,18 @@ mort as (SELECT
 	-- unweighted total children in group
 	count(*) AS nrows
 	FROM dhs_data_summary.child_mortality_raw, consts
-	GROUP BY surveyid--, clusterid, lat, lon
+	GROUP BY surveyid, clusterid, lat, lon
 )
 
-SELECT surveyid,-- clusterid, lat, lon,
+SELECT surveyid, clusterid, lat, lon,
+    tot AS total_children_wt,
 	CASE WHEN denom_u5>0 THEN num_u5 / denom_u5 ELSE null END AS mort_u5,
-    CASE WHEN denom_u5_whole>0 THEN num_u5_whole / denom_u5_whole ELSE null END AS mort_u5_1,
+    --CASE WHEN denom_u5_whole>0 THEN num_u5_whole / denom_u5_whole ELSE null END AS mort_u5_1,
 	CASE WHEN denom_inf>0 THEN num_inf / denom_inf ELSE null END AS mort_inf,
-    CASE WHEN denom_inf_whole>0 THEN num_inf_whole / denom_inf_whole ELSE null END AS mort_inf_1,
-	CASE WHEN denom_nn>0 THEN num_nn / denom_nn ELSE null END AS mort_nn,
-    CASE WHEN denom_nn_whole>0 THEN num_nn_whole / denom_nn_whole ELSE null END AS mort_nn_1
+    --CASE WHEN denom_inf_whole>0 THEN num_inf_wh  ole / denom_inf_whole ELSE null END AS mort_inf_1,
+	CASE WHEN denom_nn>0 THEN num_nn / denom_nn ELSE null END AS mort_nn
+    --CASE WHEN denom_nn_whole>0 THEN num_nn_whole / denom_nn_whole ELSE null END AS mort_nn_1
+
 	FROM mort
 WHERE denom_u5 != 0
 ORDER BY surveyid::INTEGER --, clusterid::INTEGER
