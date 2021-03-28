@@ -21,11 +21,59 @@ rh1_sched.surveyid AS surveyid
 -- household / individual identifiers
 , rh0_hh.hhid AS hhid
 , rh0_hh.hv002 AS hv002_hh_num
-, COALESCE(rh0_hh.hv006, r01_mums.v006) AS hv006_interview_mth
+
+-- interview date
+, '          -->' AS interview_date_vars
 , COALESCE(rh0_hh.hv007, r01_mums.v007) AS hv007_interview_yr
+, COALESCE(rh0_hh.hv006, r01_mums.v006) AS hv006_interview_mth
 , COALESCE(rh0_hh.hv016, r01_mums.v016) AS hv016_interview_day
-, COALESCE (rh0_hh.hv008, r01_mums.v008) AS hv008_interview_cmc
+--, COALESCE (rh0_hh.hv008, r01_mums.v008) AS hv008_interview_cmc
 , COALESCE(rh0_hh.hv008a, r01_mums.v008a) AS hv008a_interview_cdc
+
+-- biomarkers date
+, '          -->' AS biomarker_date_vars
+, rh0_hh.hv807y AS hv807y_biomarker_visit_yr
+, rh0_hh.hv807m AS hv807m_biomarker_visit_mth
+, rh0_hh.hv807d AS hv807d_biomarker_visit_day
+, rh0_hh.hv807a AS hv807a_biomarker_visit_cdc
+, rh6_hh_lvl_ht_wt.hc19 AS hc19_biomarkers_msmnt_yr
+, rh6_hh_lvl_ht_wt.hc18 AS hc18_biomarkers_msmnt_mth
+, rh6_hh_lvl_ht_wt.hc17 AS hc17_biomarkers_msmnt_day
+, rh6_hh_lvl_ht_wt.hc20 AS hc20_biomarkers_msmnt_cdc
+, r44_ch_lvl_ht_wt.hw19 AS hw19_biomarkers_msmnt_yr
+, r44_ch_lvl_ht_wt.hw18 AS hw18_biomarkers_msmnt_mth
+, r44_ch_lvl_ht_wt.hw17 AS hw17_biomarkers_msmnt_day
+
+-- DoB info from birth history
+, '          -->' AS birth_history_DoB_vars
+, r21_kids.b2 AS b2_birth_yr
+, r21_kids.b1 AS b1_birth_mth
+, r21_kids.b17 AS b17_birth_day
+, r21_kids.b18 AS b18_dob_cdc
+
+-- DoB info from biomarkers
+, '          -->' AS biomarkers_DoB_vars
+, rh6_hh_lvl_ht_wt.hc31 AS hc31_birth_yr
+, rh6_hh_lvl_ht_wt.hc30 AS hc30_birth_mth
+, rh6_hh_lvl_ht_wt.hc16 AS hc16_birth_day
+, r44_ch_lvl_ht_wt.hw16 AS hw16_birth_day
+, rh6_hh_lvl_ht_wt.hc32a AS hc32a_dob_cdc
+, rh6_hh_lvl_ht_wt.hc33 AS hc33_diagnostic_for_hc32
+, (SELECT value_desc FROM dhs_survey_specs.dhs_value_descs -- 2021 Addition
+    WHERE col_name='HC33' and surveyid=rh0_hh.surveyid AND value=hc33 AND value_type='ExplicitValue')
+    AS hc33_desc_diagnostic_for_hc32
+
+-- Age
+, '          -->' AS age_estimates
+, r21_kids.b8 AS b8_age_yrs_birthhistory
+, rh1_sched.hv105 AS hv105_age_yrs_schedule
+, COALESCE(rh0_hh.hv008a::Integer, r01_mums.v008a::Integer) - r21_kids.b18::Integer
+    AS age_days_from_main_cdc_calc
+, COALESCE(rh6_hh_lvl_ht_wt.hc20::Integer, rh0_hh.hv807a::Integer) - rh6_hh_lvl_ht_wt.hc32a::Integer
+    AS age_days_from_biomarkers_cdc_calc
+, rh6_hh_lvl_ht_wt.hc1a AS age_days_from_biomarkers
+
+, '|          -->' AS remaining_data
 
 -- child type identifiers
 , rh1_sched.hvidx as child_hh_line_num --joining this to r21_kids.b16 so no point coalescing
@@ -35,23 +83,6 @@ rh1_sched.surveyid AS surveyid
     WHERE col_name='HV104' AND surveyid=rh0_hh.surveyid AND value=hv104  AND value_type='ExplicitValue' ),
            (SELECT value_desc FROM dhs_survey_specs.dhs_value_descs
     WHERE col_name='B4' AND surveyid=rh0_hh.surveyid AND value=b4  AND value_type='ExplicitValue' )) AS desc_child_sex
-
-, r21_kids.b8 AS b8_child_age_yrs
-, rh1_sched.hv105 AS hv105_child_age_yrs
-, r21_kids.b2 AS b2_birth_yr
-, r21_kids.b1 AS b1_birth_mth
-, r21_kids.b17 AS b17_birth_day
-, r21_kids.b3 AS b3_dob_cmc
-, r21_kids.b18 AS b18_dob_cdc
-, rh6_hh_lvl_ht_wt.hc31 AS hw31_birth_yr
-, rh6_hh_lvl_ht_wt.hc30 AS hw30_birth_mth
-, COALESCE(rh6_hh_lvl_ht_wt.hc16, r44_ch_lvl_ht_wt.hw16) AS hc16_birth_day
-, rh6_hh_lvl_ht_wt.hc32 AS hc32_dob_cmc
-, rh6_hh_lvl_ht_wt.hc32a AS hc32a_dob_cdc
--- TODO: not working
-, COALESCE (rh0_hh.hv008::Integer, r01_mums.v008::Integer) - r21_kids.b3::Integer AS child_age_from_cmc
-, COALESCE(rh0_hh.hv008a::Integer, r01_mums.v008a::Integer) - r21_kids.b18::Integer AS child_age_from_cdc
-
 , r21_kids.b0 AS b0_child_is_twin -- 2021 Addition
 
 -- mother info
