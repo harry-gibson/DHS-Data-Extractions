@@ -1,6 +1,8 @@
--- THIS FILE REPRESENTS THE EXTRACTION COMPLETED FOR LUCY TUSTING AS AT 20190221 BY HSG, FOR AN ANALYSIS EXTENDING
--- THAT PUBLISHED PREVIOUSLY IN PLOS MED, ADDING NUMEROUS VARIABLES TO DO WITH CHILDREN'S VACCINATION, HEALTH, ETC.
--- IT PROVED TO BE AN EXTREMELY COMPLEX EXTRACTION TO PUT TOGETHER DRAWING INFORMATION FROM MANY DIFFERENT AREAS OF
+-- THIS FILE REPRESENTS THE EXTRACTION COMPLETED FOR LUCY TUSTING AS AT 20210328 BY HSG, FOR AN EXTENSION TO
+-- THE 2019 ANALYSIS IN STAGE_04.
+-- RELATIVE TO THAT ANALYSIS, THIS EXTRACTION ADDS MORE INFORMATION ON BIOMARKERS, ON INTERVIEW DATE AND DoB,
+-- AND WAS RUN FOR SURVEYS IN LAC AND SEA REGIONS IN ADDITION TO SSA.
+-- AS BEFORE THIS IS A COMPLEX EXTRACTION DRAWING INFORMATION FROM MANY DIFFERENT AREAS OF
 -- THE SURVEY TABLES AND BRINGING IN RESULTS FROM SEVERAL SURVEYS WITH INFORMATION IN NON-STANDARD (COUNTRY-SPECIFIC)
 -- LOCATIONS.
 
@@ -59,7 +61,7 @@ rh1_sched.surveyid AS surveyid
 , r44_ch_lvl_ht_wt.hw16 AS hw16_birth_day
 , rh6_hh_lvl_ht_wt.hc32a AS hc32a_dob_cdc
 , rh6_hh_lvl_ht_wt.hc33 AS hc33_diagnostic_for_hc32
-, (SELECT value_desc FROM dhs_survey_specs.dhs_value_descs -- 2021 Addition
+, (SELECT value_desc FROM dhs_survey_specs.dhs_value_descs
     WHERE col_name='HC33' and surveyid=rh0_hh.surveyid AND value=hc33 AND value_type='ExplicitValue')
     AS hc33_desc_diagnostic_for_hc32
 
@@ -289,12 +291,12 @@ rh1_sched.surveyid AS surveyid
           COALESCE((CASE WHEN rhmc_cs_hh_lvl_mal.surveyid='323' THEN NULLIF(rhmc_cs_hh_lvl_mal.sh119,'') ELSE NULL END), NULL),
           -- SH212 has varying meaning so must be filtered to svy 338 only; in that svy it is also in S212
           COALESCE((CASE WHEN rh6_hh_lvl_ht_wt.surveyid='338' THEN NULLIF(rh6_hh_lvl_ht_wt.sh212,'') ELSE NULL END), NULL),
-          -- Same for SH214 / svy 484... really do these people not think at all
+          -- Same for SH214 / svy 484... arghhh
           COALESCE((CASE WHEN rh6_hh_lvl_ht_wt.surveyid='484' THEN NULLIF(rh6_hh_lvl_ht_wt.sh214,'') ELSE NULL END), NULL),
-          -- ... and SH511 / svy 304 hate hate hate them all how does an organisation this big get so dumb
+          -- ... and SH511 / svy 304 getting ridiculous now
           COALESCE((CASE WHEN rh6_hh_lvl_ht_wt.surveyid='304' THEN NULLIF(rh6_hh_lvl_ht_wt.sh511,'') ELSE NULL END), NULL))
   AS hml35_result_mal_rapid_test
--- this won't produce descs for the non-standard col names. I'm not typing all that shit out again
+-- this won't produce descs for the non-standard col names. I'm not typing all that out again
 , (SELECT value_desc FROM dhs_survey_specs.dhs_value_descs
     WHERE col_name='HML35' AND surveyid=rh0_hh.surveyid
           AND value=COALESCE(NULLIF(rhmh_hh_lvl_mal.hml35,''), NULLIF(rhm2_hh_lvl_mal.hml35,''))
@@ -363,11 +365,6 @@ LEFT OUTER JOIN dhs_data_tables."RECHMH" rhmh_hh_lvl_mal
     ON rh1_sched.surveyid = rhmh_hh_lvl_mal.surveyid AND rh1_sched.hhid = rhmh_hh_lvl_mal.hhid
            -- two possibilities for line number in RECHMH, only one in use at any one time
       AND rh1_sched.hvidx = COALESCE(rhmh_hh_lvl_mal.hmhidx, rhmh_hh_lvl_mal.idxhml)
-
--- .. with this one known exception where the FUCKWOMBLES called the index column something totally incorrect
---LEFT OUTER JOIN dhs_data_tables."RECHMH" rhmh_hh_lvl_mal_231
---    ON rh1_sched.surveyid = rhmh_hh_lvl_mal_231.surveyid AND rh1_sched.hhid = rhmh_hh_lvl_mal_231.hhid
---      AND rh1_sched.hvidx = rhmh_hh_lvl_mal_231.idxhml -- idxhml? what tf?
 
 -- Additional Malaria Variables (or Childrens Malaria Tests)
 LEFT OUTER JOIN dhs_data_tables."RECHM2" rhm2_hh_lvl_mal
@@ -470,6 +467,6 @@ LEFT OUTER JOIN dhs_survey_specs.dhs_survey_listing svy
 
 -- we will run this query for one survey at a time
 WHERE
-  -- health data are only present for <5 but lucy wants all <= 5 even so
+  -- health data are only present for <5 but we want all <= 5 even so
   rh1_sched.hv105::INTEGER <= 5
   AND rh0_hh.surveyid = '{SURVEYID}'
